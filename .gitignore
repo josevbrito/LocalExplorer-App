@@ -47,3 +47,7 @@ LocalExplorer/.vscode/ # VS Code specific
 # OS specific
 .DS_Store
 Thumbs.db
+
+# REST Clients Files
+*.rest
+*.http
