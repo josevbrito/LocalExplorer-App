@@ -1,0 +1,49 @@
+# Global .gitignore for a monorepo with Spring Boot and Angular/Ionic
+
+# Spring Boot (localexplorer-backend)
+localexplorer-backend/.gradle/
+localexplorer-backend/build/
+localexplorer-backend/.idea/         # IntelliJ IDEA
+localexplorer-backend/.vscode/       # VS Code
+localexplorer-backend/*.iml          # IntelliJ IDEA
+localexplorer-backend/target/        # Maven build output
+localexplorer-backend/src/*/resources/*.log
+localexplorer-backend/src/*/resources/*.sql
+localexplorer-backend/src/*/resources/*.h2.db # For H2 database file
+# Spring Boot specific IDE/OS files
+.idea/
+*.iml
+.vscode/
+*.log
+logs/
+tmp/
+#STS (Spring Tool Suite)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+# Angular/Ionic (LocalExplorer)
+LocalExplorer/node_modules/
+LocalExplorer/dist/
+LocalExplorer/out-tsc/
+LocalExplorer/.angular/
+LocalExplorer/.capacitor/ # Capacitor build files
+LocalExplorer/android/    # Android native project files
+LocalExplorer/ios/        # iOS native project files
+LocalExplorer/tmp/
+LocalExplorer/*.js.map
+LocalExplorer/*.css.map
+LocalExplorer/npm-debug.log*
+LocalExplorer/.DS_Store
+LocalExplorer/.idea/ # IDE specific
+LocalExplorer/.vscode/ # VS Code specific
+
+# VS Code specific for the monorepo root
+.vscode/
+
+# OS specific
+.DS_Store
+Thumbs.db
